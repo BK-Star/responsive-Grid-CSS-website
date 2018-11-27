@@ -145,12 +145,17 @@ img{
 .portfolio{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .portfolio img{
     width: 100%;
     box-shadow: var(--shadow);
+    transition: ease-in-out .5s;
+}
+
+.portfolio img:hover{
+    transform: scale(1.04);
 }
 
 footer{
